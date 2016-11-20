@@ -1,0 +1,23 @@
+{
+  "name": "appengine-bower",
+  "description": "An example of running Bower on Google App Engine.",
+  "version": "0.0.1",
+  "private": true,
+  "license": "Apache Version 2.0",
+  "author": "Google Inc.",
+  "engines": {
+    "node": "~4.2"
+  },
+  "scripts": {
+    "postinstall": "bower install --config.interactive=false",
+    "test": "mocha -R spec -t 120000 --require intelli-espower-loader ../../test/_setup.js test/*.test.js"
+  },
+  "dependencies": {
+    "bower": "^1.7.7",
+    "express": "^4.13.4",
+    "jade": "^1.11.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.5.3"
+  }
+}

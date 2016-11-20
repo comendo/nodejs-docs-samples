@@ -1,0 +1,21 @@
+{
+  "name": "appengine-disk",
+  "version": "0.0.1",
+  "description": "Simple sample for Node.js on Google App Engine",
+  "private": true,
+  "license": "Apache Version 2.0",
+  "author": "Google Inc.",
+  "engines": {
+    "node": "~4.2"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "test": "mocha -R spec -t 120000 --require intelli-espower-loader ../../test/_setup.js test/*.test.js"
+  },
+  "dependencies": {
+    "express": "^4.13.4"
+  },
+  "devDependencies": {
+    "mocha": "^2.5.3"
+  }
+}
